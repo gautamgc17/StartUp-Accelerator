@@ -1,0 +1,95 @@
+body{
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+.one{
+    padding: 10px;
+    margin: 10px;
+    background-color: azure;
+}
+h4{
+    color: rgb(16, 4, 61);
+    margin-left: 40px;
+    padding: 40px;
+}
+
+.textone{
+    margin-top: 30px;
+}
+
+.title-image{
+    height: 300px;
+    width: 500px;
+    border-radius: 100px;
+    align-self: center;
+}
+.schimg{
+    height:300px;
+    width: 300px;
+}
+#features{
+    padding: 40px;
+    margin: 40px;
+}
+body {
+  margin: 0;
+}
+
+.image-grid {
+  --gap: 16px;
+  --num-cols: 4;
+  --row-height: 300px;
+
+  box-sizing: border-box;
+  padding: var(--gap);
+
+  padding-top: 3.5%;
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+
+}
+
+.image-grid > img {
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-grid-col-2 {
+  grid-column: span 2;
+}
+
+.image-grid-row-2 {
+  grid-row: span 2;
+}
+
+/* Anything udner 1024px */
+@media screen and (max-width: 1024px) {
+  .image-grid {
+    --num-cols: 2;
+    --row-height: 200px;
+  }
+}
+.search{
+    margin: 20px;
+    padding: 20px;
+    
+}
+h1{
+   padding: 15px;
+   text-align: center;
+   color: rgb(6, 6, 90);
+}
+h2{
+    padding-left: 55px;
+    padding-top: 25px;
+}
+.bar{
+    background-color: rgb(243, 227, 238);
+}
+

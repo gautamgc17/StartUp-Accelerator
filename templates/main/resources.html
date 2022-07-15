@@ -1,0 +1,169 @@
+{% load static %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b8f054bdd1.js" crossorigin="anonymous"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Resources</title>
+
+    <style>
+        header{
+            background-image: url('/static/main/resources.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 750px;
+        }
+        .section{
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="nav-wrapper grey darken-3">
+            <div class="container">
+                <a href="" class="brand-logo"> StartUp Accelerator </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="{% url 'home' %}"> Home </a></li>
+                    <li><a href="{% url 'about' %}"> About </a></li>
+                    <li><a href="{% url 'top-startups' %}"> Top StartUps </a></li>
+                    <li><a href="{% url 'resources' %}"> Learning Resources </a></li>
+                    <li><a href="{% url 'submit-project' %}"> Pitch Idea </a></li>
+                    <li><a href="{% url 'schemes' %}"> Govt Schemes </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- PHOTO GRIDS -->
+    <div class="container section scrollspy" id="photo">
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="{% static 'main/skills.jpg' %}" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2"> Learn the latest skills </h3>
+                <p> Learn online and advance your career with courses in finance, data science, analytics, artificial intelligence, digital marketing, and more </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7">
+                <img src="{% static 'main/career.jpg' %}" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1 pull-l5 right-align">
+                <h3 class="indigo-text text-darken-2 "> Get ready for a career </h3>
+                <p> Develop new skills and get trained to work in high-demand fields like IT, AI and cloud engineering through our curated list of resources </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="{% static 'main/certificate.jpg' %}" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l7 offset-l1">
+                <h3 class="indigo-text text-darken-2"> Earn a certificate or degree </h3>
+                <p> Professional Certificates from top Universities in Business, Computer Science and many more that can help you get job-ready for an in-demand career field </p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h3> Free Learning Resources for you </h3>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            {% for course in courses %} 
+            <div class="col s12 m4">   
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" style="height: 150px; width: 100%;" src="{{course.photo.url}}">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">{{course.title}}<i class="material-icons right">more_vert</i></span>
+                      <p><a href="{{course.link}}" target="_blank">{{course.modules}} modules</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">{{course.title}}<i class="material-icons right">close</i></span>
+                      <p>{{course.description}}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="page-footer grey darken-2">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 l5">
+                <h5 class="white-text"> StartUp Accelerator </h5>
+                <ul>
+                    <i class="btn-floating btn-small fab fa-youtube"></i>
+                    <i class="btn-floating btn-small fab fa-instagram"></i>
+                    <i class="btn-floating btn-small fab fa-facebook"> </i> 
+                    <i class="btn-floating btn-small fab fa-linkedin"></i>
+            </div>
+            <div class="col s12 l3">
+              <ul>
+                <li><a class="grey-text text-lighten-3" href=""> Privacy Policy </a></li>
+                <li><a class="grey-text text-lighten-3" href=""> Terms and Conditions </a></li>
+                <li><a class="grey-text text-lighten-3" href=""> Disclaimer </a></li>
+              </ul>
+            </div>
+            <div class="col s12 l3 offset-l1">
+                <h5 class="white-text"> Connect With Us </h5>
+                <div class="row" style="margin-bottom: -14px;">
+                    <div class="col l2">
+                        <i class="material-icons prefix right"> email </i>
+                    </div>
+                    <p>startup@mail.com</p>
+                </div>
+                <div class="row">
+                    <div class="col l2">
+                        <i class="material-icons prefix right"> telephone </i>
+                    </div>
+                    <p>56789-22345</p>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="footer-copyright grey darken-4 center-align">
+          <div class="container">
+          © 2022 Copyright 
+          </div>
+        </div>
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.parallax').parallax();
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+            $('.tabs').tabs();
+            $('textarea#message').characterCounter();
+            $('.datepicker').datepicker({
+                disableWeekends: true
+            });
+            $('.timepicker').timepicker();
+        });
+    </script>
+</body>
+</html>

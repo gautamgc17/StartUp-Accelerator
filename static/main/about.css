@@ -1,0 +1,30 @@
+/* .about{
+    display: flex;
+    flex-direction: row;
+}
+.about_heading{
+    padding-left: 5rem;
+    padding-top:2rem;
+}
+.about_text{
+    width: 45vw;
+    margin :0 5rem;
+}
+.image{
+   width:30vw;
+}
+article{
+    display: flex;
+}
+.container{
+    margin:2rem;
+  
+}
+.round_img{
+    padding-top: 5px;
+    border-radius: 20%;
+}
+.extra{
+   height: fit-content;
+}
+ */

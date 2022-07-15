@@ -1,0 +1,29 @@
+{% extends 'base.html' %} 
+
+{% load static %} 
+
+{% block content %} 
+
+{% load crispy_forms_tags %}
+
+{% load socialaccount %} 
+
+{% providers_media_js %} 
+
+<!--Register--> 
+<div class="container py-5">
+	<h1> Student Registration </h1>
+	<form method="POST">
+        {% include 'includes/messages.html' %}
+		{% csrf_token %}
+        {{ studentRegister_form|crispy }} 
+        <div class="container">
+            <div class="row justify-content-center">
+                <button class="btn btn-primary col-md-2 mx-1" type="submit"> Register </button>
+                <a class="btn btn-primary col-md-2 mx-1" href="{% url 'student-login' %}"> Login </a>
+            </div> 
+        </div>                 
+	</form> 
+</div>
+
+{% endblock %}

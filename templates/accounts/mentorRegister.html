@@ -1,0 +1,28 @@
+{% extends 'base.html' %} 
+
+{% load static %} 
+
+{% block content %} 
+
+{% load crispy_forms_tags %}
+
+{% load socialaccount %} 
+
+{% providers_media_js %} 
+
+<!--Register--> 
+<div class="container py-5">
+	<h1> Mentor Registration </h1>
+	<form method="POST">
+        {% include 'includes/messages.html' %}
+		{% csrf_token %}
+        {{ mentorRegister_form|crispy }} 
+        <div class="container">
+            <div class="row justify-content-center">
+                <button class="btn btn-primary col-md-2 mx-1" type="submit"> Register </button>
+            </div> 
+        </div>                 
+	</form> 
+</div>
+
+{% endblock %}

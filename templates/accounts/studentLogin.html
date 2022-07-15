@@ -1,0 +1,35 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+
+{% load static %} 
+
+{% load crispy_forms_tags %}
+
+{% load socialaccount %} 
+
+{% providers_media_js %} 
+
+<!--Login--> 
+<div class="container py-5">
+  <h1>Login</h1>
+  <form method="POST">
+    {% csrf_token %}
+    {{ studentLogin_form|crispy }}
+    <br>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <ul class="social-list" style="list-style: none">
+          <h5>Login via social media</h5>
+          <li><a href="{% provider_login_url 'facebook' method='oauth2' %}" ><i class="fa-brands fa-facebook"></i><span>Facebook</span></a></li>
+          <li><a href="{% provider_login_url 'google' %}" ><i class="fa-brands fa-google"></i><span>Google</span></a></li>
+        </ul> 
+      </div>
+    </div>    
+    <button class="btn btn-primary mx-3" type="submit">Login</button>
+  </form>
+  <p class="text-center">Don't have an account? <a href="{% url 'student-register' %}">Create an Account</a>.</p>
+</div>
+
+{% endblock %}
