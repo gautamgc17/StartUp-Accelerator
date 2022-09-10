@@ -7,7 +7,15 @@ Development of Integrated dashboard for sharing of innovation and startups with 
 
 
 ## Problem Statement Description
-"Innovation and entrepreneurship is a part of Make in India campaign of Govt of India. There are several innovations happening across HEIs in India, which can be referred and could be taken further for implementation with appropriate permissions. Accordingly, a portal shall give facility to all HEIs and their students to share details on innovation and start-ups with copy right issues addressed as appropriate.The main focus of this problem statement is to 1. To develop a single platform for the students / startup fellows / entrepreneurs to register and submit their their ideas / prototypes / business idea 2. To facilitate various agencies (Govt. / Pvt.) to register and submit their problem statements 3. To provide a platform for Venture capitalist / Angel investors for analyzing ideas / prototypes / solutions of their interest to invest fund 4. To create a bucket of mentor in different disciplines It aims to create a common platform for the aspirant students / start up fellows / entrepreneurs for pitching their ideas / prototype / solutions against their own innovation / raised by various agencies."
+"Innovation and entrepreneurship is a part of Make in India campaign of Govt of India. There are several innovations happening across HEIs in India, which can be referred and could be taken further for implementation with appropriate permissions. Accordingly, a portal shall give facility to all HEIs and their students to share details on innovation and start-ups with copy right issues addressed as appropriate.The main focus of this problem statement is to 
+
+1. To develop a single platform for the students / startup fellows / entrepreneurs to register and submit their their ideas / prototypes / business idea 
+
+2. To facilitate various agencies (Govt. / Pvt.) to register and submit their problem statements 
+
+3. To provide a platform for Venture capitalist / Angel investors for analyzing ideas / prototypes / solutions of their interest to invest fund 
+
+4. To create a bucket of mentor in different disciplines It aims to create a common platform for the aspirant students / start up fellows / entrepreneurs for pitching their ideas / prototype / solutions against their own innovation / raised by various agencies."
 
 
 ## Idea Abstract
