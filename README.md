@@ -6,7 +6,6 @@ StartUp-Accelerator : AI powered web portal for Startups
 Development of Integrated dashboard for sharing of innovation and startups with success stories across Higher Educational Institutions and relevant stakeholders
 
 
-
 ## Problem Statement Description
 "Innovation and entrepreneurship is a part of Make in India campaign of Govt of India. There are several innovations happening across HEIs in India, which can be referred and could be taken further for implementation with appropriate permissions. Accordingly, a portal shall give facility to all HEIs and their students to share details on innovation and start-ups with copy right issues addressed as appropriate.The main focus of this problem statement is to 
 
