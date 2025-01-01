@@ -1,8 +1,8 @@
-## Idea Title	
+## SIH Project Title	
 StartUp-Accelerator : AI powered web portal for Startups
 
 
-## Problem Statement Title
+## Problem Statement 
 Development of Integrated dashboard for sharing of innovation and startups with success stories across Higher Educational Institutions and relevant stakeholders
 
 
